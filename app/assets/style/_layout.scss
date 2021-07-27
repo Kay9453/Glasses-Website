@@ -1,0 +1,52 @@
+.header{
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: $primary;
+    color: $white;
+    font-family: $ch, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    img{
+        width: 80px;
+        height: 48.57px;
+    }
+    .menu{
+        width: 27%;
+        display: flex;
+        justify-content: space-between;
+    }
+    @include pad{
+        height: 108px;
+        .menu{
+            width: 57%;
+        }
+    }
+    @include mobile{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        height: 100%;
+        img{
+            margin: 0 auto;
+            width: auto;
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .menu{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .menu li{
+            text-align: center;
+            width: 50%;
+            border: 1px solid #fff;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+}
