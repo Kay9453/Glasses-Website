@@ -1,3 +1,20 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+a:link{
+	text-decoration: none;
+	color: $white;
+}
+a:hover{
+	color: #F0C808;;
+}
+a:active{
+    color: $white;
+}
+hr{
+    border: 1px solid #fff;
+}
 .header{
     height: 88px;
     display: flex;
@@ -30,8 +47,8 @@
         flex-wrap: wrap;
         padding: 0;
         height: 100%;
-        img{
-            margin: 0 auto;
+        a{
+            margin: auto;
             width: auto;
             height: auto;
             padding-top: 10px;
@@ -47,6 +64,175 @@
             border: 1px solid #fff;
             padding-top: 8px;
             padding-bottom: 8px;
+        }
+    }
+}
+.footer{
+    background-color: $primary;
+    color: $white;
+    padding-left: 21%;
+    padding-right: 21%;
+    .footer-menu{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .menu-items{
+            width: 105%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: $ch, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            padding-top: 32px;
+            padding-bottom: 36px;
+        }
+        
+    }
+    .social-media{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 32px;
+    }
+    .phone{
+        display: flex;
+        padding-bottom: 16px;
+        .phone-img{
+            width: 48px;
+            text-align: center;
+        }
+        a:link{
+            font-size: 36px;
+            line-height: 54px;
+            font-family: $en, sans-serif;
+            padding-left: 16px;    
+        }
+    }
+    .email{
+        display: flex;
+        padding-bottom: 24px;
+        .email-img{
+            width: 48px;
+            text-align: center;
+        }
+        a:link{
+            font-size: 36px;
+            line-height: 54px;
+            font-family: $en, sans-serif;
+            padding-left: 16px;    
+        }
+    }
+    .copyright{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $en, sans-serif;
+        padding-top: 33px;
+        padding-bottom: 39px;
+        border-top: 1px solid $white;
+        .copyright-link{
+            font-size: 14px;
+            line-height: 21px;
+            font-family: $ch, sans-serif;
+            width: 16%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @include pad{
+        padding-left: 5%;
+        padding-right: 5%;
+        .footer-menu{
+            .menu-items{
+                width: 159%;
+                padding-bottom: 24px;
+            }
+        }
+        .social-media{
+            width: 16%;
+            img{
+                width: 24px;
+            }
+        }
+        .phone{
+            padding-bottom: 12px;
+            a:link{
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 8px; 
+            }
+            .phone-img{
+                width: 24px;  
+            }
+        }
+        .email{
+            padding-bottom: 20px;
+            a:link{
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 8px; 
+            }
+            .email-img{
+                width: 24px;
+            }
+        }
+        .copyright{
+            padding-top: 24px;
+            padding-bottom: 32px;
+            .copyright-link{
+                width: 22%;
+            }
+        }
+        
+    }
+    @include mobile{
+        padding-left: 15px;
+        padding-right: 15px;
+        .footer-menu{
+            .menu-items{
+                display: none;
+            }
+        }
+        .social-media{
+            width: 35%;
+            padding-top: 24px;
+        }
+        .phone{
+            padding-top: 25px;
+            padding-bottom: 6px;
+            a:link{
+                font-size: 16px;
+                line-height: 30px;
+                padding-left: 6.5px; 
+            }
+            .phone-img{
+                width: 24px;  
+            }
+        }
+        .email{
+            padding-bottom: 24px;
+            a:link{
+                font-size: 16px;
+                line-height: 30px;
+                padding-left: 6.5px; 
+            }
+            .email-img{
+                width: 24px;
+            }
+        }
+        .copyright{
+            flex-direction: column;
+            padding-top: 16px;
+            padding-bottom: 24px;
+            .copyright-link{
+                flex-direction: column;
+                li{
+                    padding-top: 8px;
+                }
+            }
         }
     }
 }
