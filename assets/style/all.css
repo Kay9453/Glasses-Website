@@ -53,18 +53,12 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-a:link {
-  text-decoration: none;
-  color: #fff; }
-
-a:hover {
-  color: #F0C808; }
-
 img {
   max-width: 100%;
   height: auto; }
 
-a:link {
+a {
+  color: #fff;
   text-decoration: none;
   color: #fff; }
 
@@ -72,7 +66,7 @@ a:hover {
   color: #F0C808; }
 
 a:active {
-  color: #fff; }
+  color: #44bba4; }
 
 hr {
   border: 1px solid #fff; }
@@ -302,5 +296,84 @@ hr {
                   flex-direction: column; }
           .footer .copyright .copyright-link li {
             padding-top: 8px; } }
+
+main {
+  padding-left: 21%;
+  padding-right: 26%;
+  margin-top: 96px;
+  margin-bottom: 74px;
+  font-family: "Noto Sans TC", sans-serif; }
+  main h1 {
+    font-size: 48px;
+    line-height: 80px;
+    font-weight: bold;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px; }
+  main h2 {
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 36px; }
+  main .qa-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    main .qa-list section {
+      padding-bottom: 32px; }
+      main .qa-list section .qa-title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        padding-bottom: 16px; }
+      main .qa-list section .qa-answer {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 9%; }
+
+@media (max-width: 768px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 60px;
+    margin-bottom: 72px; }
+    main h1 {
+      border-left: 4px solid #9F1213; }
+    main h2 {
+      padding-top: 40px;
+      padding-bottom: 32px; }
+    main section {
+      padding-bottom: 24px; } }
+
+@media (max-width: 375px) {
+  main {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 28px;
+    margin-bottom: 36px; }
+    main h1 {
+      font-size: 28px;
+      padding-left: 8px; }
+    main h2 {
+      font-size: 20px;
+      padding-top: 24px;
+      padding-bottom: 24px; }
+    main .qa-list section {
+      padding-bottom: 20px; }
+      main .qa-list section .qa-title {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 8px; }
+      main .qa-list section .qa-answer {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0; } }
 
 /*# sourceMappingURL=all.css.map */
