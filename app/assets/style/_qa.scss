@@ -1,0 +1,90 @@
+main{
+    padding-left: 21%;
+    padding-right: 26%;
+    margin-top: 96px;
+    margin-bottom: 74px;
+    font-family: $ch, sans-serif;
+    h1{
+        font-size: 48px;
+        line-height: 80px;
+        font-weight: bold;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 63px;
+        font-weight: bold;
+        padding-top: 60px;
+        padding-bottom: 36px;
+    }
+    .qa-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        section{
+            padding-bottom: 32px;
+            .qa-title{
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: bold;
+                padding-bottom: 16px;
+            }
+            .qa-answer{
+                font-size: 16px;
+                line-height: 24px;
+                padding-left: 9%;
+            }
+        }        
+    }
+}
+@include pad{
+    main{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 60px;
+        margin-bottom: 72px;
+        h1{
+            border-left: 4px solid #9F1213;
+        }
+        h2{
+            padding-top: 40px;
+            padding-bottom: 32px;
+        }
+        section{
+            padding-bottom: 24px;
+        }
+    }
+}
+@include mobile{
+    main{
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-top: 28px;
+        margin-bottom: 36px;
+        h1{
+            font-size: 28px;
+            padding-left: 8px;
+        }
+        h2{
+            font-size: 20px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        .qa-list {
+            section{
+                padding-bottom: 20px;
+                .qa-title{
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 8px;
+                }
+                .qa-answer{
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

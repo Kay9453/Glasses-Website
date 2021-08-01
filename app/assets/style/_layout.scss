@@ -2,15 +2,16 @@ img{
     max-width: 100%;
     height: auto;
 }
-a:link{
-	text-decoration: none;
+a{
+    color: $white;
+    text-decoration: none;
 	color: $white;
 }
 a:hover{
-	color: #F0C808;;
+	color: #F0C808;
 }
 a:active{
-    color: $white;
+    color: #44bba4;
 }
 hr{
     border: 1px solid #fff;
